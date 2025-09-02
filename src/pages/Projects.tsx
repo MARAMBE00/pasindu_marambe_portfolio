@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Github, Eye, Code, Globe } from 'lucide-react';
+import { Github, Code } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
 import keratoScanAI from '../assets/keratoScanAI.jpeg';
@@ -171,17 +171,6 @@ const Projects = () => {
                     </div>
                     <div className="project-overlay">
                       <div className="project-links">
-                        {/* <motion.a 
-                          href={project.liveUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="project-link"
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          <Eye className="link-icon" />
-                          <span>Live Demo</span>
-                        </motion.a> */}
                         <motion.a 
                           href={project.githubUrl} 
                           target="_blank" 
@@ -250,17 +239,6 @@ const Projects = () => {
                     </div>
                     <div className="project-overlay">
                       <div className="project-links">
-                        {/* <motion.a 
-                          href={project.liveUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="project-link"
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          <Globe className="link-icon" />
-                          <span>Live</span>
-                        </motion.a> */}
                         <motion.a 
                           href={project.githubUrl} 
                           target="_blank" 

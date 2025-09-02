@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, Globe, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Send, CheckCircle } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -83,11 +83,11 @@ const Contact = () => {
     }
   ];
 
-  const availability = [
-    { day: 'Monday - Friday', time: '9:00 AM - 6:00 PM PST' },
-    { day: 'Saturday', time: '10:00 AM - 2:00 PM PST' },
-    { day: 'Sunday', time: 'Closed' }
-  ];
+  // const availability = [
+  //   { day: 'Monday - Friday', time: '9:00 AM - 6:00 PM PST' },
+  //   { day: 'Saturday', time: '10:00 AM - 2:00 PM PST' },
+  //   { day: 'Sunday', time: 'Closed' }
+  // ];
 
   return (
     <div className="page contact-page">

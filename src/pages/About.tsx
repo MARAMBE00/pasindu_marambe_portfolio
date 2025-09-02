@@ -1,4 +1,4 @@
-import { Download, Mail, Linkedin, Github, Globe } from 'lucide-react';
+import { Download, Mail, Linkedin, Github } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
 // import ProfilePicture from '../assets/profile.png';

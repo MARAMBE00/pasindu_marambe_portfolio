@@ -38,29 +38,29 @@ const Experience = () => {
     }
   ];
 
-  const freelanceProjects = [
-    {
-      title: "E-commerce Platform",
-      client: "Retail Client",
-      period: "2023",
-      description: "Built a full-featured e-commerce platform with payment integration and admin dashboard.",
-      technologies: ["Next.js", "Stripe", "PostgreSQL", "Tailwind CSS"]
-    },
-    {
-      title: "Mobile App Backend",
-      client: "Startup Client",
-      period: "2022",
-      description: "Developed RESTful API and real-time features for a mobile application.",
-      technologies: ["Node.js", "Socket.io", "MongoDB", "Redis"]
-    },
-    {
-      title: "Data Analytics Dashboard",
-      client: "Enterprise Client",
-      period: "2021",
-      description: "Created interactive dashboards for business intelligence and reporting.",
-      technologies: ["React", "D3.js", "Python", "FastAPI"]
-    }
-  ];
+  // const freelanceProjects = [
+  //   {
+  //     title: "E-commerce Platform",
+  //     client: "Retail Client",
+  //     period: "2023",
+  //     description: "Built a full-featured e-commerce platform with payment integration and admin dashboard.",
+  //     technologies: ["Next.js", "Stripe", "PostgreSQL", "Tailwind CSS"]
+  //   },
+  //   {
+  //     title: "Mobile App Backend",
+  //     client: "Startup Client",
+  //     period: "2022",
+  //     description: "Developed RESTful API and real-time features for a mobile application.",
+  //     technologies: ["Node.js", "Socket.io", "MongoDB", "Redis"]
+  //   },
+  //   {
+  //     title: "Data Analytics Dashboard",
+  //     client: "Enterprise Client",
+  //     period: "2021",
+  //     description: "Created interactive dashboards for business intelligence and reporting.",
+  //     technologies: ["React", "D3.js", "Python", "FastAPI"]
+  //   }
+  // ];
 
   return (
     <div className="page experience-page">

@@ -33,26 +33,26 @@ const Education = () => {
     }
   ];
 
-  const certifications = [
-    {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-123456"
-    },
-    {
-      name: "Microsoft Certified: Azure Developer Associate",
-      issuer: "Microsoft",
-      date: "2022",
-      credentialId: "MS-789012"
-    },
-    {
-      name: "Google Cloud Professional Developer",
-      issuer: "Google",
-      date: "2021",
-      credentialId: "GC-345678"
-    }
-  ];
+  // const certifications = [
+  //   {
+  //     name: "AWS Certified Solutions Architect",
+  //     issuer: "Amazon Web Services",
+  //     date: "2023",
+  //     credentialId: "AWS-123456"
+  //   },
+  //   {
+  //     name: "Microsoft Certified: Azure Developer Associate",
+  //     issuer: "Microsoft",
+  //     date: "2022",
+  //     credentialId: "MS-789012"
+  //   },
+  //   {
+  //     name: "Google Cloud Professional Developer",
+  //     issuer: "Google",
+  //     date: "2021",
+  //     credentialId: "GC-345678"
+  //   }
+  // ];
 
   return (
     <div className="page education-page">
