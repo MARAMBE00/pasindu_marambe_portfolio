@@ -99,7 +99,7 @@ const About = () => {
                   transition: { duration: 0.3 }
                 }}
               >
-                <span>Your Photo</span>
+                {/* <span>Your Photo</span> */}
               </motion.div>
             </div>
           </AnimatedSection>

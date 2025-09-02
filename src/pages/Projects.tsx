@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Github, Eye, Code, Globe } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
+import keratoScanAI from '../assets/keratoScanAI.jpeg';
+import nephroAI from '../assets/nephroAI.png';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -9,84 +11,72 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with user authentication, product management, shopping cart, and payment integration using Stripe.",
-      image: "/project1.jpg",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Express"],
+      title: "KeratoScan AI",
+      description: "KeratoScan AI is an AI-driven diagnostic tool designed to detect early-stage keratoconus a progressive eye disease using corneal topography images. Leveraging the NASNet deep learning architecture, this system offers accurate classification alongside a user-friendly, multi-role web interface suitable for medical professionals.",
+      image: {keratoScanAI},
+      technologies: ["React JS", "TypeScript", "Python", "Flask", "TensorFlow", "Keras", "Scikit-learn", "Firebase Firestore"],
       category: "web",
       liveUrl: "https://project1.com",
-      githubUrl: "https://github.com/username/project1",
+      githubUrl: "https://github.com/MARAMBE00/Early-Stage_Keratoconus_Detection.git",
       featured: true,
       year: "2024"
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration, and progress tracking features.",
-      image: "/project2.jpg",
-      technologies: ["React", "Firebase", "Material-UI", "Redux"],
+      title: "Nephro AI",
+      description: "Nephro AI is a website that uses CT scan images to identify kidney tumors, stones, and cysts among other diseases. Anyone can use the website because of how user-friendly it is. An open-source JavaScript library for building user interfaces, the React JS framework was used to create the Nephro AI website.",
+      image: {nephroAI},
+      technologies: ["React JS", "Node.js", "JavaScript"],
       category: "web",
       liveUrl: "https://project2.com",
-      githubUrl: "https://github.com/username/project2",
+      githubUrl: "https://github.com/MARAMBE00/Multiple-Kidney-Disease-Detection.git",
       featured: true,
       year: "2023"
     },
     {
       id: 3,
-      title: "Machine Learning Dashboard",
-      description: "Interactive dashboard for visualizing machine learning model performance and data analysis with real-time updates.",
+      title: "Weather Web Application",
+      description: "A clean and responsive browser-based app built with HTML, CSS, and JavaScript. It enables users to search for any city worldwide and view real-time weather data fetched from the OpenWeatherMap API.",
       image: "/project3.jpg",
-      technologies: ["Python", "Flask", "TensorFlow", "D3.js", "PostgreSQL"],
-      category: "ai",
+      technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "OpenWeatherMap API"],
+      category: "web",
       liveUrl: "https://project3.com",
-      githubUrl: "https://github.com/username/project3",
+      githubUrl: "https://github.com/MARAMBE00/Weather_Web_Application.git",
       featured: false,
-      year: "2023"
+      year: "2022"
     },
     {
       id: 4,
-      title: "Mobile Fitness App",
-      description: "Cross-platform mobile application for tracking workouts, nutrition, and fitness goals with personalized recommendations.",
-      image: "/project4.jpg",
-      technologies: ["React Native", "Node.js", "MongoDB", "Expo"],
-      category: "mobile",
-      liveUrl: "https://project4.com",
-      githubUrl: "https://github.com/username/project4",
+      title: "PHP-based E-Commerce System",
+      description: "A simple PHP-based e-commerce web application that allows users to browse products, manage shopping carts, and complete purchases with user authentication and MySQL backend.",
+      image: "/project5.jpg",
+      technologies: ["PHP", "HTML5", "Bootstrap", "MySQL"],
+      category: "web",
+      liveUrl: "https://project5.com",
+      githubUrl: "https://github.com/MARAMBE00/PHP-based_E-Commerce_System.git",
       featured: false,
       year: "2022"
     },
     {
       id: 5,
-      title: "Weather Forecast App",
-      description: "Real-time weather application with location-based forecasts, interactive maps, and weather alerts.",
+      title: "To-Do List Web Application",
+      description: "A lightweight and interactive web app built with PHP and MongoDB that enables users to create, view, update, and delete tasks, implementing full CRUD functionality in a user-friendly interface.",
       image: "/project5.jpg",
-      technologies: ["React", "OpenWeather API", "Leaflet", "CSS3"],
+      technologies: ["PHP", "MongoDB", "HTML5", "CSS3", "JavaScript"],
       category: "web",
       liveUrl: "https://project5.com",
-      githubUrl: "https://github.com/username/project5",
+      githubUrl: "https://github.com/MARAMBE00/ToDo_List_WebApplication.git",
       featured: false,
       year: "2022"
-    },
-    {
-      id: 6,
-      title: "Data Visualization Tool",
-      description: "Advanced data visualization tool for creating interactive charts, graphs, and dashboards from various data sources.",
-      image: "/project6.jpg",
-      technologies: ["Vue.js", "D3.js", "Python", "FastAPI", "SQLite"],
-      category: "data",
-      liveUrl: "https://project6.com",
-      githubUrl: "https://github.com/username/project6",
-      featured: false,
-      year: "2021"
     }
   ];
 
   const filters = [
     { key: 'all', label: 'All Projects' },
     { key: 'web', label: 'Web Development' },
-    { key: 'mobile', label: 'Mobile Apps' },
-    { key: 'ai', label: 'AI/ML' },
-    { key: 'data', label: 'Data Science' }
+    // { key: 'mobile', label: 'Mobile Apps' },
+    // { key: 'ai', label: 'AI/ML' },
+    // { key: 'data', label: 'Data Science' }
   ];
 
   const filteredProjects = activeFilter === 'all' 
@@ -139,7 +129,7 @@ const Projects = () => {
           </section>
         </AnimatedSection>
 
-        {/* <AnimatedSection delay={0.4}>
+        <AnimatedSection delay={0.4}>
           <section className="featured-projects">
             <h2>Featured Projects</h2>
             <div className="featured-grid">
@@ -161,7 +151,7 @@ const Projects = () => {
                     </div>
                     <div className="project-overlay">
                       <div className="project-links">
-                        <motion.a 
+                        {/* <motion.a 
                           href={project.liveUrl} 
                           target="_blank" 
                           rel="noopener noreferrer" 
@@ -171,7 +161,7 @@ const Projects = () => {
                         >
                           <Eye className="link-icon" />
                           <span>Live Demo</span>
-                        </motion.a>
+                        </motion.a> */}
                         <motion.a 
                           href={project.githubUrl} 
                           target="_blank" 
@@ -211,7 +201,7 @@ const Projects = () => {
               ))}
             </div>
           </section>
-        </AnimatedSection> */}
+        </AnimatedSection>
 
         <AnimatedSection delay={0.5}>
           <section className="all-projects">
@@ -235,7 +225,7 @@ const Projects = () => {
                     </div>
                     <div className="project-overlay">
                       <div className="project-links">
-                        <motion.a 
+                        {/* <motion.a 
                           href={project.liveUrl} 
                           target="_blank" 
                           rel="noopener noreferrer" 
@@ -245,7 +235,7 @@ const Projects = () => {
                         >
                           <Globe className="link-icon" />
                           <span>Live</span>
-                        </motion.a>
+                        </motion.a> */}
                         <motion.a 
                           href={project.githubUrl} 
                           target="_blank" 
@@ -311,7 +301,7 @@ const Projects = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Github className="btn-icon" />
-                View GitHub Profile
+                View More Projects
               </motion.a>
             </div>
           </section>

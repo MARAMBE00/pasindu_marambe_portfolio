@@ -4,33 +4,37 @@ import { motion } from 'framer-motion';
 
 const Experience = () => {
   const experienceData = [
+    // {
+    //   id: 1,
+    //   position: "Senior Software Engineer",
+    //   company: "Tech Company Inc.",
+    //   location: "San Francisco, CA",
+    //   period: "2022 - Present",
+    //   description: "Leading development of scalable web applications and mentoring junior developers. Implementing microservices architecture and cloud-native solutions.",
+    //   technologies: ["React", "Node.js", "Python", "AWS", "Docker", "Kubernetes"],
+    //   achievements: [
+    //     "Reduced API response time by 40% through optimization",
+    //     "Led team of 5 developers in major product launch",
+    //     "Implemented CI/CD pipeline reducing deployment time by 60%"
+    //   ]
+    // },
     {
       id: 1,
-      position: "Senior Software Engineer",
-      company: "Tech Company Inc.",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      description: "Leading development of scalable web applications and mentoring junior developers. Implementing microservices architecture and cloud-native solutions.",
-      technologies: ["React", "Node.js", "Python", "AWS", "Docker", "Kubernetes"],
-      achievements: [
-        "Reduced API response time by 40% through optimization",
-        "Led team of 5 developers in major product launch",
-        "Implemented CI/CD pipeline reducing deployment time by 60%"
-      ]
+      position: "Software Engineer Intern",
+      company: "Hayleys Fentons Limited",
+      location: "200 Deans Road, Colombo 01000",
+      period: "Aug 2025 - Present",
+      description: "Full-stack development of web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software.",
+      technologies: ["Python", "PostgreSQL"]
     },
     {
       id: 2,
-      position: "Software Developer",
-      company: "Startup Solutions",
-      location: "New York, NY",
-      period: "2020 - 2022",
-      description: "Full-stack development of web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software.",
-      technologies: ["JavaScript", "React", "Node.js", "MongoDB", "Express", "Git"],
-      achievements: [
-        "Developed 3 major features for the main product",
-        "Improved code quality score from 75% to 95%",
-        "Reduced bug reports by 30% through better testing"
-      ]
+      position: "Software Engineer Intern",
+      company: "Airport and Aviation Services (SL) (Pvt) Ltd",
+      location: "Katunayake, Sri Lanka",
+      period: "Sep 2023 - Aug 2024",
+      description: "Designed and developed robust desktop applications using C# with WPF and Windows Forms, focusing on real-time video streaming, system monitoring, and digital content management. Contributed to full-cycle development of admin panels with CRUD operations, ensuring high performance and seamless user experience in enterprise environments.",
+      technologies: ["C#", "Python", "WPF (Windows Presentation Foundation) Applications", "Windows Form Applications", "MSSQL"]
     }
   ];
 
@@ -67,7 +71,7 @@ const Experience = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Experience
+            Work Experience
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -82,7 +86,7 @@ const Experience = () => {
       <div className="container">
         <AnimatedSection delay={0.3}>
           <section className="experience-section">
-            <h2>Work Experience</h2>
+            {/* <h2>Work Experience</h2> */}
             <div className="timeline">
               {experienceData.map((experience, index) => (
                 <motion.div 
@@ -142,7 +146,7 @@ const Experience = () => {
                       </div>
                     </div>
 
-                    <div className="achievements">
+                    {/* <div className="achievements">
                       <h4>Key Achievements:</h4>
                       <ul>
                         {experience.achievements.map((achievement, achievementIndex) => (
@@ -156,7 +160,7 @@ const Experience = () => {
                           </motion.li>
                         ))}
                       </ul>
-                    </div>
+                    </div> */}
                   </motion.div>
                 </motion.div>
               ))}

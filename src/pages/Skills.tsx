@@ -1,6 +1,7 @@
 import { Code, Database, Cloud, Smartphone, Brain, Wrench } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
+import { title } from 'framer-motion/client';
 
 const Skills = () => {
   const skillCategories = [
@@ -9,16 +10,6 @@ const Skills = () => {
       title: 'Programming Languages',
       icon: Code,
       skills: [
-        { 
-          name: 'JavaScript', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-          url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-        },
-        { 
-          name: 'TypeScript', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-          url: 'https://www.typescriptlang.org/'
-        },
         { 
           name: 'Python', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
@@ -30,9 +21,19 @@ const Skills = () => {
           url: 'https://www.java.com/'
         },
         { 
-          name: 'C++', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
-          url: 'https://isocpp.org/'
+          name: 'C#', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+          url: 'https://learn.microsoft.com/en-us/dotnet/csharp/'
+        },
+        { 
+          name: 'JavaScript', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+          url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+        },
+        { 
+          name: 'TypeScript', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+          url: 'https://www.typescriptlang.org/'
         }
       ]
     },
@@ -42,7 +43,7 @@ const Skills = () => {
       icon: Code,
       skills: [
         { 
-          name: 'React', 
+          name: 'React JS', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
           url: 'https://reactjs.org/'
         },
@@ -55,11 +56,6 @@ const Skills = () => {
           name: 'CSS3', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
           url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-        },
-        { 
-          name: 'Next.js', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
-          url: 'https://nextjs.org/'
         }
       ]
     },
@@ -68,6 +64,11 @@ const Skills = () => {
       title: 'Backend Development',
       icon: Code,
       skills: [
+        {
+          name: 'PHP',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+          url: 'https://www.php.net/'
+        },
         { 
           name: 'Node.js', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
@@ -79,7 +80,7 @@ const Skills = () => {
           url: 'https://expressjs.com/'
         },
         { 
-          name: 'Python Flask', 
+          name: 'Flask', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
           url: 'https://flask.palletsprojects.com/'
         }
@@ -91,19 +92,29 @@ const Skills = () => {
       icon: Database,
       skills: [
         { 
+          name: 'MySQL', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+          url: 'https://www.mysql.com/'
+        },
+        { 
+          name: 'MSSQL', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
+          url: 'https://www.microsoft.com/en-us/sql-server/'
+        },
+        { 
           name: 'MongoDB', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
           url: 'https://www.mongodb.com/'
         },
         { 
+          name: 'Firebase', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+          url: 'https://firebase.google.com/'
+        },
+        { 
           name: 'PostgreSQL', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
           url: 'https://www.postgresql.org/'
-        },
-        { 
-          name: 'MySQL', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-          url: 'https://www.mysql.com/'
         }
       ]
     },
@@ -174,6 +185,28 @@ const Skills = () => {
       ]
     },
     {
+      id: "testing",
+      title: "Testing & QA Tools",
+      icon: Wrench,
+      skills: [
+        { 
+          name: 'Postman', 
+          logo: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+          url: 'https://www.postman.com/'
+        },
+        {
+          name: "Sellenium WebDriver",
+          logo: "https://www.vectorlogo.zone/logos/seleniumio/seleniumio-icon.svg",
+          url: "https://www.selenium.dev/projects/webdriver/"
+        },
+        {
+          name: "TestNG",
+          logo: "https://testng.org/testng-10/images/logo.png",
+          url: "https://testng.org/doc/"
+        }
+      ]
+    },
+    {
       id: 'tools',
       title: 'Development Tools',
       icon: Wrench,
@@ -183,16 +216,37 @@ const Skills = () => {
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
           url: 'https://code.visualstudio.com/'
         },
-        { 
-          name: 'Postman', 
-          logo: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
-          url: 'https://www.postman.com/'
+        {
+          name: "IntelliJ IDEA",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg",
+          url: "https://www.jetbrains.com/idea/"
+        },
+        {
+          name: "Visual Studio",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
+          url: "https://visualstudio.microsoft.com/"
+        },
+        {
+          name: 'Git',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+          url: 'https://git-scm.com/'
+        },
+        {
+          name: 'GitHub',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+          url: 'https://github.com/'
         },
         { 
           name: 'Figma', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
           url: 'https://www.figma.com/'
-        }
+        },
+        {
+          name: 'Trello',
+          logo: 'https://cdn.worldvectorlogo.com/logos/trello.svg',
+          url: 'https://trello.com/'
+        },
+        
       ]
     }
   ];
