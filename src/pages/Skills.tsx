@@ -33,11 +33,6 @@ const Skills = () => {
           name: 'C++', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
           url: 'https://isocpp.org/'
-        },
-        { 
-          name: 'Go', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg',
-          url: 'https://golang.org/'
         }
       ]
     },
@@ -52,11 +47,6 @@ const Skills = () => {
           url: 'https://reactjs.org/'
         },
         { 
-          name: 'Vue.js', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
-          url: 'https://vuejs.org/'
-        },
-        { 
           name: 'HTML5', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
           url: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
@@ -65,11 +55,6 @@ const Skills = () => {
           name: 'CSS3', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
           url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-        },
-        { 
-          name: 'Sass', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
-          url: 'https://sass-lang.com/'
         },
         { 
           name: 'Next.js', 
@@ -97,16 +82,6 @@ const Skills = () => {
           name: 'Python Flask', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
           url: 'https://flask.palletsprojects.com/'
-        },
-        { 
-          name: 'Java Spring', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
-          url: 'https://spring.io/'
-        },
-        { 
-          name: 'GraphQL', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
-          url: 'https://graphql.org/'
         }
       ]
     },
@@ -129,16 +104,6 @@ const Skills = () => {
           name: 'MySQL', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
           url: 'https://www.mysql.com/'
-        },
-        { 
-          name: 'Redis', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
-          url: 'https://redis.io/'
-        },
-        { 
-          name: 'Sequelize', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg',
-          url: 'https://sequelize.org/'
         }
       ]
     },
@@ -148,59 +113,39 @@ const Skills = () => {
       icon: Cloud,
       skills: [
         { 
-          name: 'AWS', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
-          url: 'https://aws.amazon.com/'
-        },
-        { 
           name: 'Docker', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
           url: 'https://www.docker.com/'
-        },
-        { 
-          name: 'Kubernetes', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg',
-          url: 'https://kubernetes.io/'
-        },
-        { 
-          name: 'Git', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-          url: 'https://git-scm.com/'
-        },
-        { 
-          name: 'Terraform', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg',
-          url: 'https://www.terraform.io/'
         }
       ]
     },
-    {
-      id: 'mobile',
-      title: 'Mobile Development',
-      icon: Smartphone,
-      skills: [
-        { 
-          name: 'React Native', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-          url: 'https://reactnative.dev/'
-        },
-        { 
-          name: 'Flutter', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
-          url: 'https://flutter.dev/'
-        },
-        { 
-          name: 'Android', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg',
-          url: 'https://developer.android.com/'
-        },
-        { 
-          name: 'iOS', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg',
-          url: 'https://developer.apple.com/ios/'
-        }
-      ]
-    },
+    // {
+    //   id: 'mobile',
+    //   title: 'Mobile Development',
+    //   icon: Smartphone,
+    //   skills: [
+    //     { 
+    //       name: 'React Native', 
+    //       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    //       url: 'https://reactnative.dev/'
+    //     },
+    //     { 
+    //       name: 'Flutter', 
+    //       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
+    //       url: 'https://flutter.dev/'
+    //     },
+    //     { 
+    //       name: 'Android', 
+    //       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg',
+    //       url: 'https://developer.android.com/'
+    //     },
+    //     { 
+    //       name: 'iOS', 
+    //       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg',
+    //       url: 'https://developer.apple.com/ios/'
+    //     }
+    //   ]
+    // },
     {
       id: 'ai',
       title: 'AI & Machine Learning',
@@ -237,16 +182,6 @@ const Skills = () => {
           name: 'VS Code', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
           url: 'https://code.visualstudio.com/'
-        },
-        { 
-          name: 'Webpack', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg',
-          url: 'https://webpack.js.org/'
-        },
-        { 
-          name: 'Jest', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
-          url: 'https://jestjs.io/'
         },
         { 
           name: 'Postman', 

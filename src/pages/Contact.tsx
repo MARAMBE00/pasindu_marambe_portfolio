@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Github, Globe, Send, CheckCircle } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,59 +19,67 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
+
+    try {
+      const result = await emailjs.send(
+        'service_klogddg',      // EmailJS service ID
+        'template_1ls6jmn',     // EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'Ch4EEuP_84PmbbPoG'       // EmailJS public key
+      );
+
+      console.log('Email sent:', result.text);
+      setIsSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
+    } catch (error) {
+      console.error('Email error:', error);
+      alert('Something went wrong. Please try again later.');
+    }
+
+    setIsSubmitting(false);
+
+    // Hide success after 3 seconds
+    setTimeout(() => setIsSubmitted(false), 3000);
   };
 
   const contactInfo = [
     {
       icon: Mail,
       title: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      value: 'pasindurmarambe00@gmail.com',
+      link: 'mailto:pasindurmarambe00@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+94 76 199 6637',
+      link: 'tel:+94 76 199 6637'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
-      link: '#'
+      value: 'Colombo, Sri Lanka',
+      link: 'https://www.google.com/maps/place/Bambalapitiya,+Colombo'
     },
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      value: 'linkedin.com/in/yourprofile',
-      link: 'https://linkedin.com/in/yourprofile'
+      value: 'linkedin.com/in/pasindumarambe',
+      link: 'https://www.linkedin.com/in/pasindumarambe/'
     },
     {
       icon: Github,
       title: 'GitHub',
-      value: 'github.com/yourusername',
-      link: 'https://github.com/yourusername'
-    },
-    {
-      icon: Globe,
-      title: 'Website',
-      value: 'yourwebsite.com',
-      link: 'https://yourwebsite.com'
+      value: 'github.com/MARAMBE00',
+      link: 'https://github.com/MARAMBE00'
     }
   ];
 
@@ -89,7 +98,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container">   
         <div className="contact-content">
           <div className="contact-info-section">
             <h2>Contact Information</h2>
@@ -109,7 +118,7 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="availability-section">
+            {/* <div className="availability-section">
               <h3>Availability</h3>
               <div className="availability-list">
                 {availability.map((item, index) => (
@@ -119,12 +128,12 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
-            <div className="response-time">
+            {/* <div className="response-time">
               <h3>Response Time</h3>
               <p>I typically respond to emails within 24 hours during business days.</p>
-            </div>
+            </div> */}
           </div>
 
           <div className="contact-form-section">
@@ -211,7 +220,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <section className="faq-section">
+        {/* <section className="faq-section">
           <h2>Frequently Asked Questions</h2>
           <div className="faq-grid">
             <div className="faq-item">
@@ -231,7 +240,7 @@ const Contact = () => {
               <p>I believe in transparent and frequent communication. I provide regular updates, use project management tools for collaboration, and am always available for questions and feedback.</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="collaboration-section">
           <h2>Let's Collaborate</h2>
@@ -240,7 +249,7 @@ const Contact = () => {
               I'm always interested in new opportunities and exciting projects. Whether you need a developer for a specific project, 
               want to discuss potential collaboration, or just want to connect, feel free to reach out.
             </p>
-            <div className="collaboration-types">
+            {/* <div className="collaboration-types">
               <div className="collab-type">
                 <h3>Full-Time Positions</h3>
                 <p>Looking for senior developer roles in innovative companies</p>
@@ -253,7 +262,7 @@ const Contact = () => {
                 <h3>Open Source</h3>
                 <p>Always interested in contributing to meaningful projects</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>

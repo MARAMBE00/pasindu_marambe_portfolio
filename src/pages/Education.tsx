@@ -73,7 +73,8 @@ const Education = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            My academic journey and professional certifications
+            My academic journey
+            {/* My academic journey and professional certifications */}
           </motion.p>
         </div>
       </div>
@@ -122,7 +123,7 @@ const Education = () => {
                       </div>
                     </div>
                     <p className="education-description">{education.description}</p>
-                    <div className="achievements">
+                    {/* <div className="achievements">
                       <h4>Key Achievements:</h4>
                       <ul>
                         {education.achievements.map((achievement, achievementIndex) => (
@@ -136,7 +137,7 @@ const Education = () => {
                           </motion.li>
                         ))}
                       </ul>
-                    </div>
+                    </div> */}
                   </motion.div>
                 </motion.div>
               ))}
@@ -144,7 +145,7 @@ const Education = () => {
           </section>
         </AnimatedSection>
 
-        <AnimatedSection delay={0.4}>
+        {/* <AnimatedSection delay={0.4}>
           <section className="certifications-section">
             <h2>Professional Certifications</h2>
             <div className="certifications-grid">
@@ -170,84 +171,8 @@ const Education = () => {
               ))}
             </div>
           </section>
-        </AnimatedSection>
+        </AnimatedSection> */}
 
-        <AnimatedSection delay={0.5}>
-          <section className="skills-section">
-            <h2>Academic Skills</h2>
-            <div className="skills-grid">
-              <motion.div 
-                className="skill-category"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                whileHover={{ y: -4 }}
-              >
-                <h3>Programming Languages</h3>
-                <div className="skill-tags">
-                  {["Java", "Python", "JavaScript", "C++", "SQL"].map((skill, index) => (
-                    <motion.span 
-                      key={index} 
-                      className="skill-tag"
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }}
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
-                </div>
-              </motion.div>
-              <motion.div 
-                className="skill-category"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                whileHover={{ y: -4 }}
-              >
-                <h3>Software Development</h3>
-                <div className="skill-tags">
-                  {["Git", "Docker", "Agile", "Scrum", "CI/CD"].map((skill, index) => (
-                    <motion.span 
-                      key={index} 
-                      className="skill-tag"
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }}
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
-                </div>
-              </motion.div>
-              <motion.div 
-                className="skill-category"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                whileHover={{ y: -4 }}
-              >
-                <h3>Research & Analysis</h3>
-                <div className="skill-tags">
-                  {["Data Analysis", "Machine Learning", "Statistical Analysis", "Research Methods"].map((skill, index) => (
-                    <motion.span 
-                      key={index} 
-                      className="skill-tag"
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }}
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-          </section>
-        </AnimatedSection>
       </div>
     </div>
   );

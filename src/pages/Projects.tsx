@@ -139,7 +139,7 @@ const Projects = () => {
           </section>
         </AnimatedSection>
 
-        <AnimatedSection delay={0.4}>
+        {/* <AnimatedSection delay={0.4}>
           <section className="featured-projects">
             <h2>Featured Projects</h2>
             <div className="featured-grid">
@@ -211,7 +211,7 @@ const Projects = () => {
               ))}
             </div>
           </section>
-        </AnimatedSection>
+        </AnimatedSection> */}
 
         <AnimatedSection delay={0.5}>
           <section className="all-projects">
@@ -292,14 +292,14 @@ const Projects = () => {
 
         <AnimatedSection delay={0.6}>
           <section className="github-section">
-            <h2>Open Source Contributions</h2>
+            {/* <h2>Open Source Contributions</h2> */}
             <div className="github-content">
-              <p>
+              {/* <p>
                 I actively contribute to open source projects and maintain several repositories. 
                 Check out my GitHub profile for more projects and contributions.
-              </p>
+              </p> */}
               <motion.a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/MARAMBE00" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn btn-primary"

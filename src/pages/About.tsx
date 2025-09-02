@@ -2,6 +2,27 @@ import { Download, Mail, Linkedin, Github, Globe } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
 
+const contactInfo = [
+  {
+    icon: Mail,
+    title: 'Email',
+    value: 'pasindurmarambe00@gmail.com',
+    link: 'mailto:pasindurmarambe00@gmail.com'
+  },
+  {
+    icon: Linkedin,
+    title: 'LinkedIn',
+    value: 'linkedin.com/in/pasindumarambe',
+    link: 'https://www.linkedin.com/in/pasindumarambe/'
+  },
+  {
+    icon: Github,
+    title: 'GitHub',
+    value: 'github.com/MARAMBE00',
+    link: 'https://github.com/MARAMBE00'
+  }
+];
+
 const About = () => {
   return (
     <div className="page about-page">
@@ -15,7 +36,7 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Hi, I'm <span className="highlight">Your Name</span>
+                Hi, I'm <span className="highlight">Pasindu Marambe</span>
               </motion.h1>
               <motion.h2 
                 className="hero-subtitle"
@@ -40,14 +61,22 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
               >
-                <button className="btn btn-primary">
+                <a 
+                  href="https://drive.google.com/file/d/1Xa4sRttvVw3qpz3XcE4SQEDivRGTOkEr/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
                   <Download className="btn-icon" />
                   Download CV
-                </button>
-                <button className="btn btn-secondary">
+                </a>
+                <a 
+                  href="mailto:pasindurmarambe00@gmail.com"   
+                  className="btn btn-secondary"
+                >
                   <Mail className="btn-icon" />
                   Get In Touch
-                </button>
+                </a>
               </motion.div>
             </div>
           </AnimatedSection>
@@ -99,58 +128,26 @@ const About = () => {
             <section className="contact-info-section">
               <h2>Get In Touch</h2>
               <div className="contact-grid">
-                <motion.div 
-                  className="contact-item"
-                  whileHover={{ 
-                    y: -8,
-                    transition: { duration: 0.3 }
-                  }}
-                >
-                  <Mail className="contact-icon" />
-                  <div>
-                    <h3>Email</h3>
-                    <p>your.email@example.com</p>
-                  </div>
-                </motion.div>
-                <motion.div 
-                  className="contact-item"
-                  whileHover={{ 
-                    y: -8,
-                    transition: { duration: 0.3 }
-                  }}
-                >
-                  <Linkedin className="contact-icon" />
-                  <div>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/yourprofile</p>
-                  </div>
-                </motion.div>
-                <motion.div 
-                  className="contact-item"
-                  whileHover={{ 
-                    y: -8,
-                    transition: { duration: 0.3 }
-                  }}
-                >
-                  <Github className="contact-icon" />
-                  <div>
-                    <h3>GitHub</h3>
-                    <p>github.com/yourusername</p>
-                  </div>
-                </motion.div>
-                <motion.div 
-                  className="contact-item"
-                  whileHover={{ 
-                    y: -8,
-                    transition: { duration: 0.3 }
-                  }}
-                >
-                  <Globe className="contact-icon" />
-                  <div>
-                    <h3>Website</h3>
-                    <p>yourwebsite.com</p>
-                  </div>
-                </motion.div>
+                {contactInfo.map((info, index) => (
+                  <motion.div 
+                    key={index}
+                    className="contact-item"
+                    whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                  >
+                    <info.icon className="contact-icon" />
+                    <div className="contact-details">
+                      <h3>{info.title}</h3>
+                      <a 
+                        href={info.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="contact-link"
+                      >
+                        {info.value}
+                      </a>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </section>
           </AnimatedSection>

@@ -31,20 +31,6 @@ const Experience = () => {
         "Improved code quality score from 75% to 95%",
         "Reduced bug reports by 30% through better testing"
       ]
-    },
-    {
-      id: 3,
-      position: "Junior Developer Intern",
-      company: "Digital Innovations",
-      location: "Boston, MA",
-      period: "2019 - 2020",
-      description: "Assisted in development of web applications and learned industry best practices. Participated in code reviews and team meetings.",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      achievements: [
-        "Built responsive landing page that increased conversions by 25%",
-        "Fixed 15+ critical bugs in production code",
-        "Received 'Best Intern' award for outstanding performance"
-      ]
     }
   ];
 
@@ -178,7 +164,7 @@ const Experience = () => {
           </section>
         </AnimatedSection>
 
-        <AnimatedSection delay={0.4}>
+        {/* <AnimatedSection delay={0.4}>
           <section className="freelance-section">
             <h2>Freelance & Consulting</h2>
             <div className="freelance-grid">
@@ -259,7 +245,7 @@ const Experience = () => {
               </motion.div>
             </div>
           </section>
-        </AnimatedSection>
+        </AnimatedSection> */}
       </div>
     </div>
   );

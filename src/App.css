@@ -2000,10 +2000,10 @@ body {
 }
 
 .contact-content {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  margin-bottom: 80px;
 }
 
 .contact-info-section h2,
@@ -2194,13 +2194,14 @@ body {
   font-size: 1.125rem;
 }
 
-.faq-section,
+/* .faq-section,
 .collaboration-section {
-  margin-bottom: 80px;
-}
+  margin-top: 80px;
+} */
 
 .faq-section h2,
 .collaboration-section h2 {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 32px;
