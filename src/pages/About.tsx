@@ -1,6 +1,7 @@
 import { Download, Mail, Linkedin, Github, Globe } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
+// import ProfilePicture from '../assets/profile.png';
 
 const contactInfo = [
   {
@@ -99,7 +100,11 @@ const About = () => {
                   transition: { duration: 0.3 }
                 }}
               >
-                {/* <span>Your Photo</span> */}
+                {/* <img 
+                  src={ProfilePicture} 
+                  alt="Pasindu Marambe" 
+                  className="profile-image"
+                /> */}
               </motion.div>
             </div>
           </AnimatedSection>

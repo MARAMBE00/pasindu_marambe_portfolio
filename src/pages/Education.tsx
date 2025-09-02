@@ -6,33 +6,30 @@ const Education = () => {
   const educationData = [
     {
       id: 1,
-      degree: "Master of Science in Computer Science",
-      institution: "University Name",
-      location: "City, Country",
-      period: "2020 - 2022",
-      description: "Specialized in Software Engineering and Artificial Intelligence. Completed thesis on 'Machine Learning Applications in Software Development'.",
-      gpa: "3.8/4.0",
-      achievements: ["Dean's List", "Research Assistant", "Graduate Teaching Assistant"]
+      degree: "BSc (Hons) Computer Science",
+      institution: "Informatics Institute of Technology affiliated with the University of Westminster",
+      location: "UK",
+      period: "Sep 2021 - Nov 2025",
+      description: "I have completed my BSc (Hons) in Computer Science from the Informatics Institute of Technology, affiliated with the University of Westminster, UK. Throughout the program, I built a strong foundation in programming, software engineering, web development, databases, and AI. I worked on several individual and group projects, which helped me apply theory to real-world problems and enhance my technical and collaborative skills.",
+      gpa: "First Class Honours"
     },
     {
       id: 2,
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University Name",
-      location: "City, Country",
-      period: "2016 - 2020",
-      description: "Focused on programming fundamentals, data structures, algorithms, and software development methodologies.",
-      gpa: "3.9/4.0",
-      achievements: ["Summa Cum Laude", "Computer Science Honor Society", "Programming Competition Winner"]
+      degree: "G.C.E Advanced Level Examination",
+      institution: "Thurstan College",
+      location: "Colombo 07",
+      period: "Aug 2020",
+      description: "I completed my G.C.E. Advanced Level Examination in the Mathematics stream at Thurstan College, Colombo 07, with passes in Combined Mathematics, Chemistry, and Physics (all C grades).",
+      gpa: "-"
     },
     {
       id: 3,
-      degree: "High School Diploma",
-      institution: "High School Name",
-      location: "City, Country",
-      period: "2012 - 2016",
-      description: "Advanced placement courses in Mathematics, Physics, and Computer Science.",
-      gpa: "4.0/4.0",
-      achievements: ["Valedictorian", "National Honor Society", "Science Olympiad Champion"]
+      degree: "G.C.E Ordinary Level Examination",
+      institution: "Thurstan College",
+      location: "Colombo 07",
+      period: "Dec 2016",
+      description: "I completed my G.C.E. Ordinary Level Examination at Thurstan College, Colombo 07, achieving excellent results with 8 A’s and 1 B.",
+      gpa: "-"
     }
   ];
 

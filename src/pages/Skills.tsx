@@ -56,6 +56,16 @@ const Skills = () => {
           name: 'CSS3', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
           url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+        },
+        { 
+          name: 'Bootstrap', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg',
+          url: 'https://getbootstrap.com/'
+        },
+        { 
+          name: 'Tailwind CSS', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+          url: 'https://tailwindcss.com/'
         }
       ]
     },
@@ -127,6 +137,21 @@ const Skills = () => {
           name: 'Docker', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
           url: 'https://www.docker.com/'
+        },
+        { 
+          name: 'AWS', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
+          url: 'https://aws.amazon.com/'
+        },
+        { 
+          name: 'Azure', 
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
+          url: 'https://azure.microsoft.com/'
+        },
+        { 
+          name: 'Netlify', 
+          logo: 'https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg',
+          url: 'https://www.netlify.com/'
         }
       ]
     },
@@ -173,14 +198,29 @@ const Skills = () => {
           url: 'https://www.python.org/'
         },
         { 
-          name: 'Jupyter', 
-          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg',
-          url: 'https://jupyter.org/'
-        },
-        { 
           name: 'Pandas', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',
           url: 'https://pandas.pydata.org/'
+        },
+        {
+          name: "NumPy",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+          url: "https://numpy.org/"
+        },
+        {
+          name: "Scikit-Learn",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg",
+          url: "https://scikit-learn.org/"
+        },
+        {
+          name: "Keras",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg",
+          url: "https://keras.io/"
+        },
+        {
+          name: "OpenCV",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+          url: "https://opencv.org/"
         }
       ]
     },
@@ -203,6 +243,11 @@ const Skills = () => {
           name: "TestNG",
           logo: "https://testng.org/testng-10/images/logo.png",
           url: "https://testng.org/doc/"
+        },
+        {
+          name: "JUnit",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-plain.svg",
+          url: "https://junit.org/junit5/"
         }
       ]
     },
@@ -236,6 +281,16 @@ const Skills = () => {
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
           url: 'https://github.com/'
         },
+        {
+          name: 'Jupyter',
+          logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg',
+          url: 'https://jupyter.org/'
+        },
+        {
+          name: 'Google Colab',
+          logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Google_Colaboratory_SVG_Logo.svg',
+          url: 'https://colab.research.google.com/'
+        },
         { 
           name: 'Figma', 
           logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
@@ -245,8 +300,7 @@ const Skills = () => {
           name: 'Trello',
           logo: 'https://cdn.worldvectorlogo.com/logos/trello.svg',
           url: 'https://trello.com/'
-        },
-        
+        }
       ]
     }
   ];

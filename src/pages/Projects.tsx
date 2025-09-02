@@ -4,6 +4,9 @@ import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
 import keratoScanAI from '../assets/keratoScanAI.jpeg';
 import nephroAI from '../assets/nephroAI.png';
+import phpBasedECommerce from '../assets/PHP-basedE-CommerceSystem.png';
+import todoListWebApp from '../assets/To-DoListWebApplication.png';
+import weatherWebApp from '../assets/weatherWebApplication.png';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -13,7 +16,7 @@ const Projects = () => {
       id: 1,
       title: "KeratoScan AI",
       description: "KeratoScan AI is an AI-driven diagnostic tool designed to detect early-stage keratoconus a progressive eye disease using corneal topography images. Leveraging the NASNet deep learning architecture, this system offers accurate classification alongside a user-friendly, multi-role web interface suitable for medical professionals.",
-      image: {keratoScanAI},
+      image: keratoScanAI,
       technologies: ["React JS", "TypeScript", "Python", "Flask", "TensorFlow", "Keras", "Scikit-learn", "Firebase Firestore"],
       category: "web",
       liveUrl: "https://project1.com",
@@ -25,7 +28,7 @@ const Projects = () => {
       id: 2,
       title: "Nephro AI",
       description: "Nephro AI is a website that uses CT scan images to identify kidney tumors, stones, and cysts among other diseases. Anyone can use the website because of how user-friendly it is. An open-source JavaScript library for building user interfaces, the React JS framework was used to create the Nephro AI website.",
-      image: {nephroAI},
+      image:  nephroAI,
       technologies: ["React JS", "Node.js", "JavaScript"],
       category: "web",
       liveUrl: "https://project2.com",
@@ -37,7 +40,7 @@ const Projects = () => {
       id: 3,
       title: "Weather Web Application",
       description: "A clean and responsive browser-based app built with HTML, CSS, and JavaScript. It enables users to search for any city worldwide and view real-time weather data fetched from the OpenWeatherMap API.",
-      image: "/project3.jpg",
+      image: weatherWebApp,
       technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "OpenWeatherMap API"],
       category: "web",
       liveUrl: "https://project3.com",
@@ -49,7 +52,7 @@ const Projects = () => {
       id: 4,
       title: "PHP-based E-Commerce System",
       description: "A simple PHP-based e-commerce web application that allows users to browse products, manage shopping carts, and complete purchases with user authentication and MySQL backend.",
-      image: "/project5.jpg",
+      image: phpBasedECommerce,
       technologies: ["PHP", "HTML5", "Bootstrap", "MySQL"],
       category: "web",
       liveUrl: "https://project5.com",
@@ -61,13 +64,25 @@ const Projects = () => {
       id: 5,
       title: "To-Do List Web Application",
       description: "A lightweight and interactive web app built with PHP and MongoDB that enables users to create, view, update, and delete tasks, implementing full CRUD functionality in a user-friendly interface.",
-      image: "/project5.jpg",
+      image: todoListWebApp,
       technologies: ["PHP", "MongoDB", "HTML5", "CSS3", "JavaScript"],
       category: "web",
       liveUrl: "https://project5.com",
       githubUrl: "https://github.com/MARAMBE00/ToDo_List_WebApplication.git",
       featured: false,
       year: "2022"
+    },
+    {
+      id: 6,
+      title: "Online Payment Fraud Detection",
+      description: "Explores online payment fraud detection using Deep Neural Networks (DNN), Random Forest, and Decision Trees.",
+      image: "/project5.jpg",
+      technologies: ["Python", "Jupyter Notebook"],
+      category: "ai",
+      liveUrl: "https://project5.com",
+      githubUrl: "https://github.com/MARAMBE00/Online_Payment_Fraud_Detection.git",
+      featured: false,
+      year: "2025"
     }
   ];
 
@@ -75,7 +90,7 @@ const Projects = () => {
     { key: 'all', label: 'All Projects' },
     { key: 'web', label: 'Web Development' },
     // { key: 'mobile', label: 'Mobile Apps' },
-    // { key: 'ai', label: 'AI/ML' },
+    { key: 'ai', label: 'AI/ML' },
     // { key: 'data', label: 'Data Science' }
   ];
 
@@ -147,7 +162,12 @@ const Projects = () => {
                 >
                   <div className="project-image">
                     <div className="image-placeholder">
-                      <span>{project.title}</span>
+                      {/* <span>{project.title}</span> */}
+                       <img 
+                        src={project.image} 
+                        alt={project.title} 
+                        className="project-img" 
+                      />
                     </div>
                     <div className="project-overlay">
                       <div className="project-links">
@@ -221,7 +241,12 @@ const Projects = () => {
                 >
                   <div className="project-image">
                     <div className="image-placeholder">
-                      <span>{project.title}</span>
+                      {/* <span>{project.title}</span> */}
+                       <img 
+                        src={project.image} 
+                        alt={project.title} 
+                        className="project-img" 
+                      />
                     </div>
                     <div className="project-overlay">
                       <div className="project-links">
