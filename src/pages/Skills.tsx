@@ -1,7 +1,6 @@
-import { Code, Database, Cloud, Smartphone, Brain, Wrench } from 'lucide-react';
+import { Code, Database, Cloud, Brain, Wrench } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import { motion } from 'framer-motion';
-import { title } from 'framer-motion/client';
 
 const Skills = () => {
   const skillCategories = [
@@ -155,33 +154,6 @@ const Skills = () => {
         }
       ]
     },
-    // {
-    //   id: 'mobile',
-    //   title: 'Mobile Development',
-    //   icon: Smartphone,
-    //   skills: [
-    //     { 
-    //       name: 'React Native', 
-    //       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    //       url: 'https://reactnative.dev/'
-    //     },
-    //     { 
-    //       name: 'Flutter', 
-    //       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
-    //       url: 'https://flutter.dev/'
-    //     },
-    //     { 
-    //       name: 'Android', 
-    //       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg',
-    //       url: 'https://developer.android.com/'
-    //     },
-    //     { 
-    //       name: 'iOS', 
-    //       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg',
-    //       url: 'https://developer.apple.com/ios/'
-    //     }
-    //   ]
-    // },
     {
       id: 'ai',
       title: 'AI & Machine Learning',
